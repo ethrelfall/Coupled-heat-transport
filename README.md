@@ -1,5 +1,5 @@
 # Coupled-heat-transport
-One-way coupled model of heat transport; proxy for turbulent convection (Lorenz model) coupled to 1D diffusion problem.
+One-way coupled model of heat transport: proxy for turbulent convection (Lorenz model) coupled to 1D diffusion problem.
 
 This code is intended as a simple proxy for coupling turbulent convective heat transport to a linear solid diffusion problem.  The turbulence proxy is the Lorenz model (note the physically-correct output is the Nusselt number, but the code currently uses one of the other outputs in order to generate a time series with a a greater degree of variability).  This output provides the input into a linear, time-dependent 1D diffusion problem (in a one-way coupling sense) as the Neumann condition on the left hand side i.e. it is a heat flux; the right-hand boundary condition is zero temperature and the QoI is the gradient of T at the output.
 
