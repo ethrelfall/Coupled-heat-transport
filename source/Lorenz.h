@@ -17,7 +17,7 @@ public:
 private:
 	//model parameters
 	//all the following model parameters are >0
-    //see https://www2.physics.ox.ac.uk/sites/default/files/profiles/read/lect6-43147.pdf
+        //see https://www2.physics.ox.ac.uk/sites/default/files/profiles/read/lect6-43147.pdf
 	double mRho;    //Rayleigh number
 	double mSigma;  //Prandtl number
 	double mBeta;   //coupling strength
