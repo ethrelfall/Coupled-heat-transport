@@ -69,7 +69,7 @@ void Diffusion::EvaluateTimestep(double LHS_val)
     mpCdash[0] = -2.0*mAlpha / (1.0 + 2.0*mAlpha);
     mpDdash[0] = mpData[0] / (1.0 + 2.0*mAlpha);
 
-	//for Dirichlet BC LHS
+    //for Dirichlet BC LHS
     //mpCdash[0] = 0.0;
     //mpDdash[0] = mpData[0];
 
