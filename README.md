@@ -13,4 +13,4 @@ It can be seen that large values of diffusion coefficient D allow the heat to cr
 
 ![Lorenz_attractor](png/diffused_Lorenz.png "Plots showing inputs (blue) and outputs (orange) to the diffusive region as time series for various values of diffusion coefficient D.  Horizontal axis is time and vertical axis is temperature gradient.")
 
-The parameters are controlled via the input.txt file, which contains the four numerical values for rho, sigma, and beta of the Lorenz model and the diffusion coefficient for the diffusion model.
+The parameters are controlled via the input.txt file, which contains the four numerical values for rho, sigma, and beta of the Lorenz model and the diffusion coefficient for the diffusion model.  The supplied example contains canonical choices giving a 'turbulent' case of the Lorenz model and a unit diffusion coefficient.
