@@ -27,7 +27,7 @@ private:
 	double mY0;
 	double mZ0;
 
-	//computational parameters (hyperparameters)
+	//computational parameters
 	double mDt;  //for one-way coupling, does not really matter if timesteps not the same between models
 
 	//model state storage appropriate to LSRK
