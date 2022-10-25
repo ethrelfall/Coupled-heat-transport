@@ -30,6 +30,7 @@ void Lorenz::EvaluateTimestep()
     double B[NUMSTAGES];
 
     //scheme 2 Carpenter - Kennedy (NUMSTAGES must be 5)
+    //see Fourth-Order 2N-Storage Runge-Kutta Schemes, NASA Technical Memorandum 109112
     A[0] = 0.0;
     A[1] = -0.4801594388478;
     A[2] = -1.4042471952;
