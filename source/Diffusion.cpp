@@ -8,16 +8,16 @@
 
 Diffusion::Diffusion(double DiffusionCoefficient, double timeStep) : mD(DiffusionCoefficient), mDt(timeStep)
 {
-	mResolution = FINITEDIFFRES;
-	mDx = 1.0 / mResolution;
+    mResolution = FINITEDIFFRES;
+    mDx = 1.0 / mResolution;
 
     mAlpha = 0.5*mD * mDt / (mDx * mDx);  //Crank-Nicolson method gives the factor of 0.5
 
     mTime = 0.0;
 
-	mpCdash = new double[mResolution];
-	mpDdash = new double[mResolution];
-	mpData  = new double[mResolution];
+    mpCdash = new double[mResolution];
+    mpDdash = new double[mResolution];
+    mpData  = new double[mResolution];
 
     for (int i=0; i<mResolution; i++)
     {
@@ -32,9 +32,9 @@ Diffusion::Diffusion(double DiffusionCoefficient, double timeStep) : mD(Diffusio
 
 Diffusion::~Diffusion()
 {
-	delete[] mpCdash;
-	delete[] mpDdash;
-	delete[] mpData;
+    delete[] mpCdash;
+    delete[] mpDdash;
+    delete[] mpData;
 
     fclose(mpOutFile);
 }
