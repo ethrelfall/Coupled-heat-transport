@@ -65,6 +65,6 @@ void Lorenz::EvaluateTimeDerivs()
 
 double Lorenz::OutputNusselt()
 {
-    return 1.0 + 2.0 * mY / mRho - (1.0+2.0*mY0/mRho);  //more interesting proxy, offset to start at zero or get silly artifact
+    return 1.0 + 2.0 * mY / mRho - (1.0+2.0*mY0/mRho);  //more interesting proxy, offset to start at zero
     //return 1.0 + 2.0 * mZ / gRho  - (1.0+2.0*mZ0/mRho);  //actual Nusselt number, offset to start at zero
 }
