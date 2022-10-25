@@ -5,11 +5,11 @@ This code is intended as a simple proxy for coupling turbulent convective heat t
 
 ![Lorenz_attractor](png/Lorenz_attractor.png "Plot showing the output of the Lorenz model visualized in 3D Cartesian space.  Parameters are as used in the code files in the repo.")
 
-The Lorenz model has three inputs, rho, sigma, and beta, which represent the Rayleigh number, Prandtl number, and coupling parameter in the underlying model.  Varying these gives a `phase diagram' structure in which some values give `turbulent' states with no steady solution.
+The Lorenz model has three inputs, rho, sigma, and beta, which represent the Rayleigh number, Prandtl number, and coupling parameter in the underlying model.  Varying these gives a 'phase diagram' structure in which some values give 'turbulent' states with no steady solution.
 
 The diffusion model has a single parameter, the diffusion coefficient D (the interval width is fixed at unity).  
 
-It can be seen that large values of diffusion coefficient allow the heat to cross the diffusive region largely unaffected, while shrinking this value both reduces the heat flux and smoothes out features in the time series.
+It can be seen that large values of diffusion coefficient D allow the heat to cross the diffusive region largely unaffected, while shrinking this value both reduces the heat flux and smoothes out features in the time series.
 
 ![Lorenz_attractor](png/diffused_Lorenz.png "Plots showing inputs (blue) and outputs (orange) to the diffusive region as time series for various values of diffusion coefficient D.  Horizontal axis is time and vertical axis is temperature gradient.")
 
