@@ -21,7 +21,7 @@ private:
 	//model parameters
 	double mD;  //diffusion coefficient
 
-	//computational parameters (hyperparameters?)
+	//computational parameters
 	int mResolution;
 	double mDt;
 	double mDx;
